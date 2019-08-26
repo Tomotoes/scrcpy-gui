@@ -28,9 +28,8 @@
 
 ## 💡简介
 
-<div align=center><img width="508" height="785.6" src="https://cdn.jsdelivr.net/gh/Tomotoes/images/scrcpy-gui/English.gif"/></div>
+<div align=center><img width="508" height="785.6" src="https://cdn.jsdelivr.net/gh/Tomotoes/images/scrcpy-gui/Chinese.gif"/></div>
 <div align=center><img src="./screenshot.gif"/></div>
-
 [Scrcpy](https://github.com/Genymobile/scrcpy) 是由流行的`Android`模拟器`Genymotion`背后的团队创建的，但它本身并不是`Android`模拟器，它显示和控制通过`USB`（或通过`TCP/IP`）连接的`Android`设备，它不需要任何`root`访问权限，它适用于`GNU/Linux`、`Windows`和`MacOS`。
 
 `Scrcpy`的工作原理是在你的`Android`设备上运行服务器，桌面应用程序使用`USB`（或使用`ADB`隧道无线）进行通信。服务器流式传输设备屏幕的[H.264](https://translate.googleusercontent.com/translate_c?depth=1&rurl=translate.google.com&sl=en&sp=nmt4&tl=zh-CN&u=https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC&xid=25657,15700019,15700124,15700186,15700190,15700201,15700237,15700242,15700248&usg=ALkJrhiJZJWaUqBVRqUviQ4IlhKQCwqp_Q)视频。 客户端解码视频帧并显示它们。客户端捕获输入（键盘和鼠标）事件，将它们发送到服务器，服务器将它们注入设备。[文档](https://github.com/Genymobile/scrcpy/blob/master/DEVELOP.md)提供了更多详细信息。
