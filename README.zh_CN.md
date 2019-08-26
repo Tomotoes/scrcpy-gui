@@ -1,6 +1,11 @@
-# Scrcpy GUI
-
-<p align="center"><img width="100" height="100" src="https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/icon.png"></p>
+<div align="center">
+	<img width="80" height="80" src="https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/icon.png" alt="tomoto">
+	<br>
+	<h1>Scrcpy GUI</h1>
+	<sub>Built with ❤︎ by <a href="https://tomotoes.com">Simon Ma</a> - <a href="https://github.com/Tomotoes/scrcpy-gui">English document</a></sub>
+</div>
+---
+<p align="center">✨ <strong>一个简洁&漂亮的 scrcpy GUI 应用</strong></p>
 <p align="center">
   <a href="https://github.com/feross/standard">
     <img src="https://img.shields.io/badge/code%20style-standard-green.svg?style=flat-square" alt="">
@@ -14,15 +19,10 @@
   <a href="https://github.com/Tomotoes/scrcpy-gui/releases/latest">
     <img src="https://img.shields.io/github/release/Tomotoes/scrcpy-gui.svg?style=flat-square" alt="">
   </a>
-  <a href="https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/wechat.png"><img src="https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/wechat.svg" alt=""微信赞助按钮></a>
-    <a href="https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/alipay.png"><img src="https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/alipay.svg" alt="支付宝赞助按钮"></a>
+  <a href="https://gitter.im/scrcpy/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/scrcpy/community.svg?style=flat-square"></a>
+  <a href="https://opensource.org/licenses/GPL-3.0/"><img src="https://badges.frapsoft.com/os/gpl/gpl.svg?style=flat-square"></a>
+  <a href="https://github.com/Tomotoes/scrcpy-gui/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square"></a>
 </p>
-
-[English Document](https://github.com/Tomotoes/scrcpy-gui)
-
-> 使用 `electron-vue`、`elementUI`、`adb-kit` 为`scrcpy` 提供了 **GUI**
->
-> 展示并控制你的 `Android` 设备
 
 
 
@@ -58,7 +58,7 @@
 - **利用电脑的键盘和鼠标可以控制手机**
 - **把 APK 文件拖拽到电脑窗口即可安装应用到手机，把普通文件拖拽到窗口即可复制到手机**
 - **手机电脑共享剪贴板**
-- **自动检测USB连接的应用**
+- **自动检测USB连接的设备**
 - **可直接添加设备的局域网IP，达到无线控制的效果**
 - **将自动保存连接过的IP地址，下次输入时，自动提醒**
 - **支持设备别名**
@@ -91,7 +91,7 @@
 
   - Windows
 
-    Windows 可以使用包含所有依赖项（包括adb）的预构建存档：   
+    Windows 可以使用包含所有依赖项（包括adb）的预构建存档：
 
     下载下面`scrcpy`的压缩包，里面有`ADB`文件，然后把解压后的`scrcpy`文件夹添加到环境变量，再重启电脑，就可以了。
 
@@ -157,7 +157,7 @@
 
 1. 请确保手机与电脑处在同一局域网
 
-2. 第一次无线连接时: 
+2. 第一次无线连接时:
    - **请确保手机已通过数据线连接到电脑**
    - **请确保只有一个手机通过数据线连接到电脑**
    - 第一次需设置端口，以后连接手机，只需要添加手机的静态IP即可
@@ -172,7 +172,7 @@
 
 7. 等待设备打开
 
-   
+
 
 ### 快捷键
 
@@ -220,6 +220,16 @@ npm run build
 # lint all JS/Vue component files in `src/`
 npm run lint
 ```
+
+
+
+## 🤞贡献者
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Tomotoes"><img src="https://avatars1.githubusercontent.com/u/32236122?s=460&v=4" width="100px;" alt="Tomotoes"/><br /><sub><b>Simon Ma</b></sub></a><br /><a href="https://github.com/Tomotoes/scrcpy-gui/commits?author=Tomotoes" title="Code">💻</a> <a href="https://tomotoes.com">🎨</a></td>
+  </tr>
+</table>
 
 
 

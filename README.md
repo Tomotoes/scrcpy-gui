@@ -1,6 +1,11 @@
-# Scrcpy GUI
-
-<p align="center"><img width="100" height="100" src="https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/icon.png"></p>
+<div align="center">
+	<img width="80" height="80" src="https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/icon.png" alt="tomoto">
+	<br>
+	<h1>Scrcpy GUI</h1>
+	<sub>Built with ❤︎ by <a href="https://tomotoes.com">Simon Ma</a> - <a href="https://github.com/Tomotoes/scrcpy-gui/blob/master/README.zh_CN.md">中文文档</a></sub>
+</div>
+---
+<p align="center">✨ <strong>A simple & beautiful GUI application for scrcpy</strong></p>
 <p align="center">
   <a href="https://github.com/feross/standard">
     <img src="https://img.shields.io/badge/code%20style-standard-green.svg?style=flat-square" alt="">
@@ -14,13 +19,10 @@
   <a href="https://github.com/Tomotoes/scrcpy-gui/releases/latest">
     <img src="https://img.shields.io/github/release/Tomotoes/scrcpy-gui.svg?style=flat-square" alt="">
   </a>
+  <a href="https://gitter.im/scrcpy/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/scrcpy/community.svg?style=flat-square"></a>
+  <a href="https://opensource.org/licenses/GPL-3.0/"><img src="https://badges.frapsoft.com/os/gpl/gpl.svg?style=flat-square"></a>
+  <a href="https://github.com/Tomotoes/scrcpy-gui/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square"></a>
 </p>
-
-[中文文档](https://github.com/Tomotoes/scrcpy-gui/blob/master/README.zh_CN.md)
-
-> **GUI** for `Scrcpy` using `electron-vue`、`elementUI`、 `adb-kit`.
->
-> Display and control your `Android` device.
 
 
 
@@ -28,8 +30,6 @@
 
 <div align=center><img width="508" height="785.6" src="https://cdn.jsdelivr.net/gh/Tomotoes/images/scrcpy-gui/English.gif"/></div>
 <div align=center><img src="./screenshot.gif"/></div>
-
-
 [Scrcpy](https://github.com/Genymobile/scrcpy) was created by the team behind the popular Android emulator Genymotion, but it is not an Android emulator itself, it displays and controls Android devices connected via USB or TCP/IP, it does not require any root access. It works with GNU/Linux, Windows, and MacOS.
 
 Scrcpy works by running a server on your Android device, and the desktop application communicates using USB (or using ADB tunneling wireless). The server streams the H.264 video of the device screen. The client decodes the video frames and displays them. The client captures input (keyboard and mouse) events, sends them to the server, and the server injects them into the device. [The documentation](https://github.com/Genymobile/scrcpy/blob/master/DEVELOP.md) provides more details.
@@ -199,6 +199,18 @@ npm run build
 # lint all JS/Vue component files in `src/`
 npm run lint
 ```
+
+
+
+## 🤞Contributors
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Tomotoes"><img src="https://avatars1.githubusercontent.com/u/32236122?s=460&v=4" width="100px;" alt="Tomotoes"/><br /><sub><b>Simon Ma</b></sub></a><br /><a href="https://github.com/Tomotoes/scrcpy-gui/commits?author=Tomotoes" title="Code">💻</a> <a href="https://tomotoes.com">🎨</a></td>
+  </tr>
+</table>
+
+Contributions of any kind welcome!
 
 
 
