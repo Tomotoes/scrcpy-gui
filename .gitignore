@@ -1,0 +1,14 @@
+.DS_Store
+dist/electron/*
+dist/web/*
+build/*
+!build/icons
+!build/installer.nsh
+coverage
+node_modules/
+npm-debug.log
+npm-debug.log.*
+thumbs.db
+!.gitkeep
+yarn-error.log
+docs/dist/
