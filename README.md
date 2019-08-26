@@ -4,7 +4,7 @@
 	<h1>Scrcpy GUI</h1>
 	<sub>Built with ❤︎ by <a href="https://tomotoes.com">Simon Ma</a> - <a href="https://github.com/Tomotoes/scrcpy-gui/blob/master/README.zh_CN.md">中文文档</a></sub>
 </div>
----
+<hr/>
 <p align="center">✨ <strong>A simple & beautiful GUI application for scrcpy</strong></p>
 <p align="center">
   <a href="https://github.com/feross/standard">
@@ -30,6 +30,9 @@
 
 <div align=center><img width="508" height="785.6" src="https://cdn.jsdelivr.net/gh/Tomotoes/images/scrcpy-gui/English.gif"/></div>
 <div align=center><img src="./screenshot.gif"/></div>
+
+
+
 [Scrcpy](https://github.com/Genymobile/scrcpy) was created by the team behind the popular Android emulator Genymotion, but it is not an Android emulator itself, it displays and controls Android devices connected via USB or TCP/IP, it does not require any root access. It works with GNU/Linux, Windows, and MacOS.
 
 Scrcpy works by running a server on your Android device, and the desktop application communicates using USB (or using ADB tunneling wireless). The server streams the H.264 video of the device screen. The client decodes the video frames and displays them. The client captures input (keyboard and mouse) events, sends them to the server, and the server injects them into the device. [The documentation](https://github.com/Genymobile/scrcpy/blob/master/DEVELOP.md) provides more details.
