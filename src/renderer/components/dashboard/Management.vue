@@ -145,20 +145,30 @@
 					this.$notify.success(this.$t('management.notify.newDevices'))
 				}
 			})
-			const duration = {}
+			const opened = {}
 			ipcRenderer.on('open', (_, id) => {
-				if (!duration[id]) {
-					duration[id] = true
-					this.$notify.success(this.$t('management.notify.open', { name: this.$store.get(id) || id }))
+				if (!opened[id]) {
+					opened[id] = true
 					setTimeout(() => {
-						duration[id] = false
+						this.$notify.success(this.$t('management.notify.open', { name: this.$store.get(id) || id }))
+					}, 500)
+					setTimeout(() => {
+						opened[id] = false
 					}, 1000)
 				}
 			})
 
+			const closed = {}
 			ipcRenderer.on('close', (_, { success, id }) => {
-				const result = success ? 'success' : 'error'
-				this.$notify[result](this.$t('management.open.' + result, { name: this.$store.get(id) || id }))
+				if (!closed[id]) {
+					closed[id] = true
+					const result = success ? 'success' : 'error'
+					this.$notify[result](this.$t('management.open.' + result, { name: this.$store.get(id) || id }))
+
+					setTimeout(() => {
+						closed[id] = false
+					}, 1000)
+				}
 			})
 		},
 		components: {

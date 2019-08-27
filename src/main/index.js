@@ -25,7 +25,7 @@ function createWindow() {
 		frame: false,
 		title: 'Scrcpy',
 		fullscreenable: false,
-		titleBarStyle: 'hidden',
+		// titleBarStyle: 'hidden',
 		vibrancy: 'ultra-dark',
 		center: true,
 		icon: `${__static}/icons/256x256.png`,

@@ -50,6 +50,7 @@ const open = ({ sender }, options) => {
 		const { spawn } = require('child_process')
 		const scrcpy = spawn('scrcpy', [...args, `-s ${id}`])
 		let opened = false
+		let exited = false
 		scrcpy.stdout.on('data', (data) => {
 			if (!opened) {
 				sender.send('open', id)
@@ -59,7 +60,6 @@ const open = ({ sender }, options) => {
 		})
 		scrcpy.on('error', (code) => {
 			console.log(`child process close all stdio with code ${code}`)
-			sender.send('close', { success: false, id })
 			scrcpy.kill()
 		})
 
@@ -69,7 +69,11 @@ const open = ({ sender }, options) => {
 
 		scrcpy.on('exit', (code) => {
 			console.log(`child process exited with code ${code}`)
-			sender.send('close', { success: code === 0, id })
+			if (!exited) {
+				sender.send('close', { success: code === 0, id })
+				scrcpy.kill()
+				exited = true
+			}
 		})
 	})
 }

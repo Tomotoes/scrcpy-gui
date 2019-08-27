@@ -48,8 +48,7 @@
 			]
 		},
 		"mac": {
-			"icon": "build/icons/icon.icns",
-			"target": "zip"
+			"icon": "build/icons/icon.icns"
 		},
 		"win": {
 			"icon": "build/icons/icon.ico",
