@@ -1,7 +1,7 @@
 import { remote } from 'electron'
 const { Tray, getCurrentWindow } = remote
 const window = getCurrentWindow()
-const tray = new Tray(`${__static}/icons/256x256.png`)
+const tray = new Tray(`${__static}/icons/16x16.png`)
 
 export default Menu => {
 	const menu = Menu(tray,{ label: 'tray.hide', click() { window.hide() } }, {
