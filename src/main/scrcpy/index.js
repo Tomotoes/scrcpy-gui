@@ -48,7 +48,7 @@ const open = ({ sender }, options) => {
 
 	devices.forEach(({ id }) => {
 		const { spawn } = require('child_process')
-		const scrcpy = spawn('scrcpy', [...args, `-s ${id}`])
+		const scrcpy = spawn('scrcpy', [...args, '-s', `${id}`])
 		let opened = false
 		let exited = false
 		scrcpy.stdout.on('data', (data) => {
