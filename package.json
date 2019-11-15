@@ -74,6 +74,7 @@
 		"custom-electron-titlebar": "^3.1.0",
 		"debug": "^4.1.1",
 		"element-ui": "^2.11.1",
+		"fix-path": "^2.1.0",
 		"localstorage": "^1.0.1",
 		"normalize.css": "^8.0.1",
 		"vue": "^2.5.16",
