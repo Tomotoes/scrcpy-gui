@@ -12,7 +12,7 @@ const routerMap = [{
   hidden: true,
   children: [{
     path: 'dashboard',
-    component: () => import('@/views/dashboard')
+    component: () => import('@/views/Dashboard')
   }]
 }]
 
