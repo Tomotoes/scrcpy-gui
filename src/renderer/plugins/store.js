@@ -1,6 +1,6 @@
 import LocalStorage from 'localstorage'
-// const LocalStorage = require('localstorage')
-const store = new LocalStorage('scrcpy')
+const { version } = require('../../../package.json')
+const store = new LocalStorage(`scrcpy@${version}`)
 
 export default {
 	install(Vue) {

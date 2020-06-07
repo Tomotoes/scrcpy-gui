@@ -41,6 +41,7 @@ function createWindow() {
 	mainWindow.loadURL(winURL)
 	mainWindow.once('ready-to-show', () => {
 		mainWindow.show()
+		// mainWindow.webContents.openDevTools()
 	})
 	mainWindow.on('close', () => {
 		ipcMain.removeAllListeners('open')

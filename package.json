@@ -1,6 +1,6 @@
 {
 	"name": "scrcpy-gui",
-	"version": "1.0.0",
+	"version": "1.5.0",
 	"author": "SimonMa <simon@tomotoes.com>",
 	"homepage": "https://github.com/Tomotoes/scrcpy-gui",
 	"description": "✨ A simple & beautiful GUI application for scrcpy",
@@ -11,7 +11,7 @@
 		"build:dir": "node .electron-vue/build.js && electron-builder --dir",
 		"build:clean": "cross-env BUILD_TARGET=clean node .electron-vue/build.js",
 		"build:web": "cross-env BUILD_TARGET=web node .electron-vue/build.js",
-		"dev": "node .electron-vue/dev-runner.js",
+		"start": "node .electron-vue/dev-runner.js",
 		"lint": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter src",
 		"lint:fix": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src",
 		"pack": "npm run pack:main && npm run pack:renderer",
@@ -52,7 +52,15 @@
 		},
 		"win": {
 			"icon": "build/icons/icon.ico",
-			"target": "nsis",
+			"target": [
+				{
+					"target": "nsis",
+					"arch": [
+						"x64",
+						"ia32"
+					]
+				}
+			],
 			"legalTrademarks": "Simon Personal"
 		},
 		"nsis": {
@@ -71,9 +79,10 @@
 	},
 	"dependencies": {
 		"adbkit": "^2.11.1",
-		"custom-electron-titlebar": "^3.1.0",
+		"custom-electron-titlebar": "^3.2.2",
 		"debug": "^4.1.1",
 		"element-ui": "^2.11.1",
+		"fix-path": "^3.0.0",
 		"localstorage": "^1.0.1",
 		"normalize.css": "^8.0.1",
 		"vue": "^2.5.16",

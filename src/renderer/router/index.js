@@ -5,17 +5,17 @@ Vue.use(Router)
 import Layout from '../views/Layout'
 
 const routerMap = [{
-  path: '/',
-  component: Layout,
-  redirect: '/dashboard',
-  name: 'Dashboard',
-  hidden: true,
-  children: [{
-    path: 'dashboard',
-    component: () => import('@/views/dashboard')
-  }]
+	path: '/',
+	component: Layout,
+	redirect: '/dashboard',
+	name: 'Dashboard',
+	hidden: true,
+	children: [{
+		path: 'dashboard',
+		component: () => import('@/views/Dashboard')
+	}]
 }]
 
 export default new Router({
-  routes: routerMap
+	routes: routerMap
 })
