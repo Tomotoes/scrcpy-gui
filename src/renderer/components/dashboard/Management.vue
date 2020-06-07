@@ -209,7 +209,7 @@ export default {
 			if (!closed[id]) {
 				closed[id] = true
 				const result = success ? 'success' : 'error'
-				this.$notify[result](this.$t(`management.open.${ result}`, { name: this.$store.get(id) || id }), !success && 0)
+				this.$notify[result](this.$t(`management.open.${ result}`, { name: this.$store.get(id) || id }))
 
 				setTimeout(() => {
 					closed[id] = false

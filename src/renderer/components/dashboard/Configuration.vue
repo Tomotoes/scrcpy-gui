@@ -258,6 +258,16 @@
 				<el-checkbox v-model="config.auto" border size="medium">{{
 					$t("configuration.other.auto")
 				}}</el-checkbox>
+				<el-tooltip
+					class="item"
+					effect="dark"
+					:content="$t('configuration.other.hidden.tooltip')"
+					placement="top"
+				>
+					<el-checkbox v-model="config.hidden" border size="medium">{{
+						$t("configuration.other.hidden.content")
+					}}</el-checkbox>
+				</el-tooltip>
 			</el-form-item>
 			<el-divider content-position="right">
 				<el-button type="text" @click="changeLocale">中/English</el-button>
@@ -306,6 +316,7 @@ export default {
 				fullscreen: false,
 				awake: false,
 				auto: false,
+				hidden: false,
 				crop: {
 					x: 0,
 					y: 0,
@@ -357,7 +368,7 @@ export default {
 			this.$notify.success(this.$t("configuration.notify.saveSuccess"));
 		},
 		setDefault() {
-			const source = this.config.source
+			const { source, hidden } = this.config;
 			this.config = {
 				source,
 				title: "",
@@ -381,6 +392,7 @@ export default {
 				fullscreen: false,
 				awake: false,
 				auto: false,
+				hidden,
 				crop: {
 					x: 0,
 					y: 0,

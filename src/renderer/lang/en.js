@@ -83,6 +83,10 @@ export default {
 			screen: 'Turn off the phone screen',
 			awake: 'Turn off the lock screen',
 			auto: 'Automatically turn on connected devices',
+			hidden: {
+				tooltip: 'Need to restart the application to take effect',
+				content: 'Hide to system bar after exit'
+			}
 		},
 		button: {
 			save: 'Save configuration',

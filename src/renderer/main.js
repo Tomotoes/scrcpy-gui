@@ -8,7 +8,7 @@ import locale from 'element-ui/lib/locale'
 import _en from 'element-ui/lib/locale/lang/en'
 import _zh from 'element-ui/lib/locale/lang/zh-CN'
 
-const lang = localStorage.getItem('lang') || 'en'
+const lang = localStorage.getItem('lang') || 'zh'
 locale.use(lang === 'en' ? _en : _zh)
 
 Vue.use(ElementUI)
@@ -18,7 +18,7 @@ import VueI18n from 'vue-i18n'
 Vue.use(VueI18n)
 
 const i18n = new VueI18n({
-	locale: (localStorage.getItem('lang') || 'en'),
+	locale: (localStorage.getItem('lang') || 'zh'),
 	messages: { zh, en }
 })
 

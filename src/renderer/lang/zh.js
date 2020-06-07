@@ -88,7 +88,11 @@ export default {
 			render: '渲染所有帧 会增加延迟',
 			screen: '打开镜像时关闭屏幕',
 			awake: '关闭锁屏',
-			auto: '自动打开新连接的设备'
+			auto: '自动打开新连接的设备',
+			hidden: {
+				tooltip: '需要重启应用才会生效',
+				content: '退出后隐藏到系统栏'
+			}
 		},
 		button: {
 			save: '保存当前配置',

@@ -11,7 +11,7 @@ export default vue => {
 		shadow: true,
 		icon: 'https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/favicon.ico',
 		maximizable: false,
-		hideWhenClickingClose: true,
+		hideWhenClickingClose: vue.$store.get('config').hidden || false,
 		menu: Menu(tray)
 	})
 }
