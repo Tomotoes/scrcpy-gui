@@ -21,11 +21,11 @@ export default (vue) => (tray, ...items) => {
 	const submenu = []
 	if (!items.length) {
 		submenu.push({
-			label: ''
+			label: 'Supported languages: '
 		})
 	}
 	submenu.push({
-		label: 'English',
+		label: '- English',
 		click: () => {
 			localStorage.setItem('lang', 'en')
 			tray.destroy()
@@ -37,9 +37,21 @@ export default (vue) => (tray, ...items) => {
 	})
 	submenu.push(
 		{
-			label: '中文',
+			label: '- 简体中文',
 			click: () => {
-				localStorage.setItem('lang', 'zh')
+				localStorage.setItem('lang', 'zhCN')
+				tray.destroy()
+				window.location.reload()
+			}
+		})
+	submenu.push({
+		type: 'separator'
+	})
+	submenu.push(
+		{
+			label: '- 繁体中文',
+			click: () => {
+				localStorage.setItem('lang', 'zhTW')
 				tray.destroy()
 				window.location.reload()
 			}

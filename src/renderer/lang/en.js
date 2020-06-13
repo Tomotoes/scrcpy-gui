@@ -81,7 +81,10 @@ export default {
 			touch: 'Show phone tap location',
 			render: 'Rendering all frames',
 			screen: 'Turn off the phone screen',
-			awake: 'Turn off the lock screen',
+			awake: {
+				tooltip: 'The computer control option must be opened before turning off the lock screen',
+				content: 'Turn off the lock screen'
+			},
 			auto: 'Automatically turn on connected devices',
 			hidden: {
 				tooltip: 'Need to restart the application to take effect',
@@ -147,7 +150,7 @@ export default {
 			success: '{name} already disconnected'
 		},
 		error: {
-			'unknownScrcpyPathException':'The path of the Scrcpy folder is incorrectly configured. Make sure that `scrcpy.exe` exists in this folder'
+			'unknownScrcpyPathException': 'The path of the Scrcpy folder is incorrectly configured. Make sure that `scrcpy.exe` exists in this folder'
 		}
 	},
 	titleBar: {

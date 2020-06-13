@@ -1,6 +1,6 @@
 {
 	"name": "scrcpy-gui",
-	"version": "1.5.0",
+	"version": "1.5.1",
 	"author": "SimonMa <simon@tomotoes.com>",
 	"homepage": "https://github.com/Tomotoes/scrcpy-gui",
 	"description": "✨ A simple & beautiful GUI application for scrcpy",
