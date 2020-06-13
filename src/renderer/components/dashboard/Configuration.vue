@@ -243,9 +243,16 @@
 				<el-checkbox v-model="config.fullscreen" border size="medium">{{
 					$t("configuration.other.fullscreen")
 				}}</el-checkbox>
-				<el-checkbox v-model="config.awake" border size="medium">{{
-					$t("configuration.other.awake")
-				}}</el-checkbox>
+				<el-tooltip
+					class="item"
+					effect="dark"
+					:content="$t('configuration.other.awake.tooltip')"
+					placement="top"
+				>
+					<el-checkbox v-model="config.awake" border size="medium">{{
+						$t("configuration.other.awake.content")
+					}}</el-checkbox>
+					</el-tooltip>
 				<el-checkbox v-model="config.touch" border size="medium">{{
 					$t("configuration.other.touch")
 				}}</el-checkbox>
@@ -270,7 +277,7 @@
 				</el-tooltip>
 			</el-form-item>
 			<el-divider content-position="right">
-				<el-button type="text" @click="changeLocale">中/English</el-button>
+				<el-button type="text" @click="changeLocale">简/繁/English</el-button>
 			</el-divider>
 			<div style="margin:10px auto;text-align:center">
 				<el-button type="primary" @click.native.prevent="save" plain v-waves>{{
@@ -350,6 +357,16 @@ export default {
 			]
 		};
 	},
+	watch: {
+		"config.control"(newVal, oldVal) {
+			if (this.config.awake && !newVal) {
+				this.config.awake = false
+			}
+		},
+		"config.awake"(newVal, oldVal) {
+			newVal && (this.config.control = true);
+		}
+	},
 	created() {
 		if (this.$store.has("config")) {
 			this.config = this.$store.get("config");
@@ -409,7 +426,13 @@ export default {
 			this.$store.put("config", this.config);
 		},
 		changeLocale() {
-			localStorage.setItem("lang", this.$i18n.locale === "zh" ? "en" : "zh");
+			let nextLang = "en";
+			if (this.$i18n.locale === "zhCN") {
+				nextLang = "zhTW";
+			} else if (this.$i18n.locale === "en") {
+				nextLang = "zhCN";
+			}
+			localStorage.setItem("lang", nextLang);
 			window.tray.destroy();
 			window.location.reload();
 		}

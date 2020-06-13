@@ -87,7 +87,10 @@ export default {
 			touch: '显示点按位置',
 			render: '渲染所有帧 会增加延迟',
 			screen: '打开镜像时关闭屏幕',
-			awake: '关闭锁屏',
+			awake: {
+				tooltip: '关闭锁屏前须打开电脑控制选项',
+				content: '关闭锁屏'
+			},
 			auto: '自动打开新连接的设备',
 			hidden: {
 				tooltip: '需要重启应用才会生效',
