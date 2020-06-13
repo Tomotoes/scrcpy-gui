@@ -226,15 +226,6 @@ npm run lint
 
 
 
-## 🤞贡献者
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/Tomotoes"><img src="https://avatars1.githubusercontent.com/u/32236122?s=460&v=4" width="100px;" alt="Tomotoes"/><br /><sub><b>Simon Ma</b></sub></a><br /><a href="https://github.com/Tomotoes/scrcpy-gui/commits?author=Tomotoes" title="Code">💻</a> <a href="https://tomotoes.com">🎨</a></td>
-  </tr>
-</table>
-
-
 
 ## 👀赞助
 

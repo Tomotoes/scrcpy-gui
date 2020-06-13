@@ -205,18 +205,6 @@ npm run lint
 
 
 
-## 🤞Contributors
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/Tomotoes"><img src="https://avatars1.githubusercontent.com/u/32236122?s=460&v=4" width="100px;" alt="Tomotoes"/><br /><sub><b>Simon Ma</b></sub></a><br /><a href="https://github.com/Tomotoes/scrcpy-gui/commits?author=Tomotoes" title="Code">💻</a> <a href="https://tomotoes.com">🎨</a></td>
-  </tr>
-</table>
-
-Contributions of any kind welcome!
-
-
-
 ## 👀Reward
 
 If you like `scrcpy-gui` and it really helps you, please give me a cup of coffee~

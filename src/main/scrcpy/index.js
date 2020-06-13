@@ -36,9 +36,6 @@ const open = ({ sender }, options) => {
 	if (fixed) {
 		args.push('--always-on-top')
 	}
-	if (!control) {
-		args.push('--no-control')
-	}
 	if (!border) {
 		args.push('--window-borderless')
 	}
@@ -47,6 +44,8 @@ const open = ({ sender }, options) => {
 	}
 	if (awake) {
 		args.push('--stay-awake')
+	} else if (!control) {
+		args.push('--no-control')
 	}
 	if (touch) {
 		args.push('--show-touches')
@@ -95,7 +94,7 @@ const open = ({ sender }, options) => {
 
 	devices.forEach(({ id }) => {
 		const { spawn } = require('child_process')
-		const scrcpy = spawn(cmd, [...args, '-s',`${id}`])
+		const scrcpy = spawn(cmd, [...args, '-s', `${id}`])
 
 		let opened = false
 		let exited = false
