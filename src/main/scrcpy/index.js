@@ -18,6 +18,8 @@ const open = ({ sender }, options) => {
 		cmd = scrcpyPath
 	}
 
+	args.push('--shortcut-mod=lctrl,rctrl')
+	
 	if (title !== '') {
 		args.push('--window-title')
 		args.push(title)
