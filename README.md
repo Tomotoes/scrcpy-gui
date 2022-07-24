@@ -6,6 +6,8 @@
 </div>
 <hr/>
 <p align="center">✨ <strong>A simple & beautiful GUI application for scrcpy</strong></p>
+<h3 align="center"> <strong> NOTE: Simon no energy to continue maintenance, if interested please fork</h3>
+
 <p align="center">
   <a href="https://github.com/feross/standard">
     <img src="https://img.shields.io/badge/code%20style-standard-green.svg?style=flat-square" alt="">
@@ -23,8 +25,6 @@
   <a href="https://opensource.org/licenses/GPL-3.0/"><img src="https://badges.frapsoft.com/os/gpl/gpl.svg?style=flat-square"></a>
   <a href="https://github.com/Tomotoes/scrcpy-gui/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square"></a>
 </p>
-
-
 
 ## 💡Introduction
 
